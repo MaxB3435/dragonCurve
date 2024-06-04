@@ -49,8 +49,9 @@ def keyPressed():
         if keyCode == UP:
             thelevel += 1
         if keyCode == DOWN:
-            thelevel -= 1
+            if thelevel > 1:
+                thelevel -= 1
         if keyCode == LEFT:
-            size1 -= 5
+            size1 -= 1
         if keyCode == RIGHT:
-            size += 5
+            size1 += 1
